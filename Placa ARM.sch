@@ -1,0 +1,154 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title "Placa de Desarrollo EFM32 - MCU ARM"
+Date "2020-08-30"
+Rev "0.1"
+Comp "Comit SRL"
+Comment1 "www.comit.com.ar"
+Comment2 "epereyra@comit.com.ar"
+Comment3 "Emiliano Pereyra"
+Comment4 ""
+$EndDescr
+$Sheet
+S 3950 2700 1225 825 
+U 5F4D2198
+F0 "Fuente de Poder" 50
+F1 "Fuente de Poder.sch" 50
+F2 "RX" I R 5175 2825 43 
+F3 "TX" O R 5175 2900 43 
+F4 "RWK" B L 3950 3225 43 
+F5 "CD" B L 3950 3300 43 
+F6 "DSR" B L 3950 3375 43 
+F7 "DTR" B L 3950 3450 43 
+F8 "CTS" B R 5175 2975 43 
+F9 "RTS" B R 5175 3050 43 
+$EndSheet
+$Sheet
+S 3950 3975 1225 825 
+U 5F4D946F
+F0 "Interfaz de Usuario" 50
+F1 "Interfaz de Usuario.sch" 50
+F2 "RWK" B L 3950 4275 43 
+F3 "DTR" B L 3950 4050 43 
+F4 "DSR" B L 3950 4125 43 
+F5 "CD" B L 3950 4200 43 
+F6 "MCU_PA[0..2]" B R 5175 4425 43 
+F7 "MCU_PB[7..14]" B R 5175 4350 43 
+F8 "MCU_PE[10..13]" B R 5175 4125 43 
+F9 "MCU_PC[0..15]" B R 5175 4275 43 
+F10 "MCU_PD[4..7]" B R 5175 4200 43 
+F11 "MCU_PF[0..2]" B R 5175 4050 43 
+F12 "MCU_RESET" I R 5175 4550 43 
+$EndSheet
+$Sheet
+S 6375 2700 1500 825 
+U 5F4D1FFB
+F0 "Microcontrolador" 50
+F1 "Microcontrolador.sch" 50
+F2 "MCU_PA[0..2]" B R 7875 3100 43 
+F3 "MCU_PB[7..14]" B R 7875 3175 43 
+F4 "MCU_PE[10..13]" B R 7875 3400 43 
+F5 "MCU_PC[0..15]" B R 7875 3250 43 
+F6 "MCU_PD[4..7]" B R 7875 3325 43 
+F7 "RX" I L 6375 2900 43 
+F8 "TX" O L 6375 2825 43 
+F9 "CTS" B L 6375 2975 43 
+F10 "RTS" B L 6375 3050 43 
+F11 "MCU_PF[0..2]" B R 7875 3475 43 
+F12 "MCU_RESET" I R 7875 2975 43 
+$EndSheet
+Entry Wire Line
+	3725 3325 3825 3225
+Entry Wire Line
+	3725 3400 3825 3300
+Entry Wire Line
+	3725 3475 3825 3375
+Entry Wire Line
+	3725 3550 3825 3450
+Entry Wire Line
+	3725 3950 3825 4050
+Entry Wire Line
+	3725 4025 3825 4125
+Entry Wire Line
+	3725 4100 3825 4200
+Entry Wire Line
+	3725 4175 3825 4275
+Wire Wire Line
+	3825 4050 3950 4050
+Wire Wire Line
+	3825 4125 3950 4125
+Wire Wire Line
+	3825 4200 3950 4200
+Wire Wire Line
+	3825 4275 3950 4275
+Wire Wire Line
+	3825 3225 3950 3225
+Wire Wire Line
+	3825 3300 3950 3300
+Wire Wire Line
+	3825 3375 3950 3375
+Wire Wire Line
+	3825 3450 3950 3450
+Entry Wire Line
+	6275 2725 6375 2825
+Entry Wire Line
+	6275 2800 6375 2900
+Entry Wire Line
+	6275 2875 6375 2975
+Entry Wire Line
+	6275 2950 6375 3050
+Entry Wire Line
+	5175 2825 5275 2725
+Entry Wire Line
+	5175 2900 5275 2800
+Entry Wire Line
+	5175 2975 5275 2875
+Entry Wire Line
+	5175 3050 5275 2950
+Wire Bus Line
+	6275 2625 5275 2625
+Entry Wire Line
+	5175 4050 5275 3950
+Entry Wire Line
+	5175 4125 5275 4025
+Entry Wire Line
+	5175 4200 5275 4100
+Entry Wire Line
+	5175 4275 5275 4175
+Entry Wire Line
+	5175 4350 5275 4250
+Entry Wire Line
+	5175 4425 5275 4325
+Entry Wire Line
+	7875 3100 7975 3200
+Entry Wire Line
+	7875 3175 7975 3275
+Entry Wire Line
+	7875 3250 7975 3350
+Entry Wire Line
+	7875 3325 7975 3425
+Entry Wire Line
+	7875 3400 7975 3500
+Entry Wire Line
+	7875 3475 7975 3575
+Wire Bus Line
+	7975 3800 5275 3800
+Entry Wire Line
+	7875 2975 7975 3075
+Entry Wire Line
+	5175 4550 5275 4450
+Wire Bus Line
+	6275 2625 6275 2950
+Wire Bus Line
+	5275 2625 5275 2950
+Wire Bus Line
+	3725 3325 3725 4175
+Wire Bus Line
+	5275 3800 5275 4450
+Wire Bus Line
+	7975 3075 7975 3800
+$EndSCHEMATC
