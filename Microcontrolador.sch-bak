@@ -16,27 +16,27 @@ $EndDescr
 $Comp
 L Device:C C?
 U 1 1 5F4D7858
-P 8575 4000
+P 9050 3675
 AR Path="/5F4D7858" Ref="C?"  Part="1" 
 AR Path="/5F4D1FFB/5F4D7858" Ref="C17"  Part="1" 
-F 0 "C17" H 8325 3925 50  0000 L CNN
-F 1 "1uF" H 8325 4025 50  0000 L CNN
-F 2 "" H 8613 3850 50  0001 C CNN
-F 3 "~" H 8575 4000 50  0001 C CNN
-	1    8575 4000
+F 0 "C17" H 8800 3600 50  0000 L CNN
+F 1 "1uF" H 8800 3700 50  0000 L CNN
+F 2 "" H 9088 3525 50  0001 C CNN
+F 3 "~" H 9050 3675 50  0001 C CNN
+	1    9050 3675
 	-1   0    0    1   
 $EndComp
 $Comp
 L EFM32TG11B120F128GM32:EFM32TG11B120F128GM32 U?
 U 1 1 5F4D785E
-P 6575 3850
+P 7050 3525
 AR Path="/5F4D785E" Ref="U?"  Part="1" 
 AR Path="/5F4D1FFB/5F4D785E" Ref="U3"  Part="1" 
-F 0 "U3" H 7575 4237 60  0000 C CNN
-F 1 "EFM32TG11B120F128GM32" H 7575 4131 60  0000 C CNN
-F 2 "Mis Huellas:EFM32TG11B120F128GM32" H 7575 4090 60  0001 C CNN
-F 3 "file:///home/emmie/workspace-iot/datasheet-componentes-nuevos/efm32tg11-arm32.pdf" H 7575 1525 60  0001 C CNN
-	1    6575 3850
+F 0 "U3" H 8050 3912 60  0000 C CNN
+F 1 "EFM32TG11B120F128GM32" H 8050 3806 60  0000 C CNN
+F 2 "Mis Huellas:EFM32TG11B120F128GM32" H 8050 3765 60  0001 C CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/efm32tg11-datasheet.pdf" H 8050 1300 60  0000 C CNN
+	1    7050 3525
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -48,7 +48,7 @@ AR Path="/5F4D1FFB/5F4D7864" Ref="U3"  Part="2"
 F 0 "U3" H 8825 1637 60  0000 C CNN
 F 1 "EFM32TG11B120F128GM32" H 8825 1531 60  0000 C CNN
 F 2 "Mis Huellas:EFM32TG11B120F128GM32" H 9025 1490 60  0001 C CNN
-F 3 "file:///home/emmie/workspace-iot/datasheet-componentes-nuevos/efm32tg11-arm32.pdf" H 8025 1250 60  0001 C CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/efm32tg11-datasheet.pdf" H 8025 1250 60  0001 C CNN
 	2    8025 1250
 	1    0    0    -1  
 $EndComp
@@ -171,10 +171,6 @@ F 3 "~" H 2200 1900 50  0001 C CNN
 $EndComp
 Text Notes 1300 2450 0    50   ~ 0
 Reloj de alta frecuencia
-Text Notes -4250 7800 0    47   ~ 0
-- PA0\nA: BUSBY BUSAX | LCD_SEG13 \nT: TIM0_CC0 #0 | TIM0_CC1 #7 | PCNT0_S0IN #4\nC: US1_RX #5 | US3_TX #0 | LEU0_RX #4 | I2C0_SDA #0\nO: CMU_CLK2 #0 | PRS_CH0 #0 | PRS_CH3 #3 | GPIO_EM4WU0\n\n- PA1\nA: BUSAY BUSBX | LCD_SEG14\nT: TIM0_CC0 #7 | TIM0_CC1 #0 | PCNT0_S1IN #4\nC: US3_RX #0 | I2C0_SCL #0\nO: CMU_CLK1 #0 PRS_CH1 #0\n\n- PA2\nA: BUSBY BUSAX | LCD_SEG15\nT: TIM0_CC2 #0\nC: US1_RX #6 | US3_CLK #0\nO: CMU_CLK0 #0\n\n-PB7 \nA: LFXTAL_P\nT: TIM0_CDTI0 #4 | TIM1_CC0 #3\nC: US0_TX #4 | US1_CLK #0 | US3_RX #2 | U0_CTS #4\nO: -\n\n-PB8 \nA: LFXTAL_N\nT: TIM0_CDTI1 #4 | TIM1_CC1 #3\nC: US0_RX #4 US1_CS #0 | U0_RTS #4\nO: CMU_CLKI0 #2\n\n-PB11  A: BUSAY BUSBX | VDAC0_OUT0 | OPA0_OUT | LCD_SEG28\nT: TIM0_CDTI2 #4 | TIM1_CC2 #3 | LE-TIM0_OUT0 #1 | PCNT0_S1IN #7\nC: US0_CTS #5 | US1_CLK #5 | US2_CS #3 | I2C1_SDA #1\nO: CMU_CLK1 #5 | CMU_CLKI0 #7 | ACMP0_O #3 | GPIO_EM4WU7\n\n-PB13:\nA: BUSAY BUSBX | HFXTAL_P\nT: WTIM1_CC0 #0\nC: US0_CLK #4 | US1_CTS #5 | LEU0_TX #1\nO: CMU_CLKI0 #3 | PRS_CH7 #0\n\n-PB14\nA: BUSBY BUSAX | HFXTAL_N\nT: WTIM1_CC1 #0\nC: US0_CS #4 | US1_RTS #5 | LEU0_RX #1\nO: PRS_CH6 #1\n\n\n\n\n
-Text Notes -3125 3625 0    43   ~ 9
-TABLA FUNCIONALIDAD GPIOs
 Text Label 2500 1200 2    43   ~ 0
 MCU_PB14
 Text Label 2500 1025 2    43   ~ 0
@@ -193,90 +189,90 @@ F 3 "" H 7800 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Entry Wire Line
-	6075 3950 6175 4050
+	6550 3625 6650 3725
 Entry Wire Line
-	6075 4050 6175 4150
+	6550 3725 6650 3825
 Entry Wire Line
-	6075 4150 6175 4250
+	6550 3825 6650 3925
 Wire Wire Line
-	6575 4050 6175 4050
+	7050 3725 6650 3725
 Wire Wire Line
-	6575 4150 6175 4150
-Text Label 6575 4050 2    43   ~ 0
+	7050 3825 6650 3825
+Text Label 7050 3725 2    43   ~ 0
 MCU_PA0
 Wire Wire Line
-	6175 4250 6575 4250
-Text Label 6575 4150 2    43   ~ 0
+	6650 3925 7050 3925
+Text Label 7050 3825 2    43   ~ 0
 MCU_PA1
-Text Label 6575 4250 2    43   ~ 0
+Text Label 7050 3925 2    43   ~ 0
 MCU_PA2
-Text HLabel 5600 3600 0    43   Output ~ 0
+Text HLabel 6075 3275 0    43   Output ~ 0
 MCU_PA[0..2]
-Text Label 6575 4450 2    43   ~ 0
+Text Label 7050 4125 2    43   ~ 0
 MCU_PB7
-Text Label 6575 4550 2    43   ~ 0
+Text Label 7050 4225 2    43   ~ 0
 MCU_PB8
-Text Label 6575 4650 2    43   ~ 0
+Text Label 7050 4325 2    43   ~ 0
 MCU_PB11
-Text Label 6575 4750 2    43   ~ 0
+Text Label 7050 4425 2    43   ~ 0
 MCU_PB13
-Text Label 6575 4850 2    43   ~ 0
+Text Label 7050 4525 2    43   ~ 0
 MCU_PB14
 Entry Wire Line
-	5950 4350 6050 4450
+	6425 4025 6525 4125
 Entry Wire Line
-	5950 4450 6050 4550
+	6425 4125 6525 4225
 Entry Wire Line
-	5950 4550 6050 4650
+	6425 4225 6525 4325
 Entry Wire Line
-	5950 4650 6050 4750
+	6425 4325 6525 4425
 Entry Wire Line
-	5950 4750 6050 4850
-Text HLabel 5600 3850 0    43   Output ~ 0
+	6425 4425 6525 4525
+Text HLabel 6075 3525 0    43   Output ~ 0
 MCU_PB[7..14]
 Wire Wire Line
-	6575 4450 6050 4450
+	7050 4125 6525 4125
 Wire Wire Line
-	6050 4550 6575 4550
+	6525 4225 7050 4225
 Wire Wire Line
-	6575 4650 6050 4650
+	7050 4325 6525 4325
 Wire Wire Line
-	6050 4750 6575 4750
+	6525 4425 7050 4425
 Wire Wire Line
-	6575 4850 6050 4850
-Text HLabel 5600 4100 0    43   Output ~ 0
+	7050 4525 6525 4525
+Text HLabel 6075 3775 0    43   Output ~ 0
 MCU_PE[10..13]
 Wire Bus Line
-	5600 3600 6075 3600
+	6075 3275 6550 3275
 Wire Bus Line
-	5600 3850 5950 3850
-Text Label 6575 5050 2    43   ~ 0
+	6075 3525 6425 3525
+Text Label 7050 4725 2    43   ~ 0
 MCU_PE10
-Text Label 6575 5150 2    43   ~ 0
+Text Label 7050 4825 2    43   ~ 0
 MCU_PE11
-Text Label 6575 5250 2    43   ~ 0
+Text Label 7050 4925 2    43   ~ 0
 MCU_PE12
-Text Label 6575 5350 2    43   ~ 0
+Text Label 7050 5025 2    43   ~ 0
 MCU_PE13
 Entry Wire Line
-	5825 4950 5925 5050
+	6300 4625 6400 4725
 Entry Wire Line
-	5825 5050 5925 5150
+	6300 4725 6400 4825
 Entry Wire Line
-	5825 5150 5925 5250
+	6300 4825 6400 4925
 Entry Wire Line
-	5825 5250 5925 5350
+	6300 4925 6400 5025
 $Comp
 L power:GND #PWR?
 U 1 1 5F50B022
-P 8575 4150
+P 9050 3825
 AR Path="/5F50B022" Ref="#PWR?"  Part="1" 
 AR Path="/5F4D1FFB/5F50B022" Ref="#PWR032"  Part="1" 
-F 0 "#PWR032" H 8575 3900 50  0001 C CNN
-F 1 "GND" H 8580 3977 50  0000 C CNN
-F 2 "" H 8575 4150 50  0001 C CNN
-F 3 "" H 8575 4150 50  0001 C CNN
-	1    8575 4150
+F 0 "#PWR032" H 9050 3575 50  0001 C CNN
+F 1 "GND" H 9055 3652 50  0000 C CNN
+F 2 "" H 9050 3825 50  0001 C CNN
+F 3 "" H 9050 3825 50  0001 C CNN
+	1    9050 3825
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -306,88 +302,88 @@ F 3 "" H 2200 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5925 5350 6575 5350
+	6400 5025 7050 5025
 Wire Wire Line
-	5925 5250 6575 5250
+	6400 4925 7050 4925
 Wire Wire Line
-	5925 5150 6575 5150
+	6400 4825 7050 4825
 Wire Wire Line
-	5925 5050 6575 5050
+	6400 4725 7050 4725
 Wire Bus Line
-	5600 4100 5825 4100
+	6075 3775 6300 3775
 Wire Wire Line
 	9625 1350 9625 1550
 Text Notes 7950 2675 0    50   ~ 0
 Desacople de DVDD
 Entry Wire Line
-	9075 4450 9175 4350
+	9550 4125 9650 4025
 Entry Wire Line
-	9075 4550 9175 4450
+	9550 4225 9650 4125
 Entry Wire Line
-	9075 4650 9175 4550
+	9550 4325 9650 4225
 Entry Wire Line
-	9075 4750 9175 4650
+	9550 4425 9650 4325
 Entry Wire Line
-	9075 4850 9175 4750
+	9550 4525 9650 4425
 Wire Wire Line
-	8575 4850 9075 4850
+	9050 4525 9550 4525
 Wire Wire Line
-	8575 4750 9075 4750
+	9050 4425 9550 4425
 Wire Wire Line
-	8575 4650 9075 4650
+	9050 4325 9550 4325
 Wire Wire Line
-	8575 4550 9075 4550
+	9050 4225 9550 4225
 Wire Wire Line
-	8575 4450 9075 4450
+	9050 4125 9550 4125
 Entry Wire Line
-	9225 5050 9325 4950
+	9700 4725 9800 4625
 Entry Wire Line
-	9225 5150 9325 5050
+	9700 4825 9800 4725
 Entry Wire Line
-	9225 5250 9325 5150
+	9700 4925 9800 4825
 Entry Wire Line
-	9225 5350 9325 5250
+	9700 5025 9800 4925
 Wire Wire Line
-	9225 5350 8575 5350
+	9700 5025 9050 5025
 Wire Wire Line
-	8575 5250 9225 5250
+	9050 4925 9700 4925
 Wire Wire Line
-	9225 5150 8575 5150
+	9700 4825 9050 4825
 Wire Wire Line
-	8575 5050 9225 5050
+	9050 4725 9700 4725
 Entry Wire Line
-	9375 5750 9475 5650
+	9850 5425 9950 5325
 Entry Wire Line
-	9375 5650 9475 5550
+	9850 5325 9950 5225
 Entry Wire Line
-	9375 5550 9475 5450
+	9850 5225 9950 5125
 Wire Wire Line
-	9375 5650 8575 5650
+	9850 5325 9050 5325
 Wire Wire Line
-	8575 5550 9375 5550
+	9050 5225 9850 5225
 Wire Wire Line
-	8575 5750 9375 5750
-Text HLabel 9725 3600 2    43   Output ~ 0
+	9050 5425 9850 5425
+Text HLabel 10200 3275 2    43   Output ~ 0
 MCU_PC[0..15]
-Text HLabel 9725 3850 2    43   Output ~ 0
+Text HLabel 10200 3525 2    43   Output ~ 0
 MCU_PD[4..7]
-Text HLabel 9725 4100 2    43   Output ~ 0
+Text HLabel 10200 3775 2    43   Output ~ 0
 MCU_PF[0..2]
 Wire Bus Line
-	9725 3600 9175 3600
+	10200 3275 9650 3275
 Wire Bus Line
-	9325 3850 9725 3850
+	9800 3525 10200 3525
 Wire Bus Line
-	9475 4100 9725 4100
-Text Label 8575 4450 0    43   ~ 0
+	9950 3775 10200 3775
+Text Label 9050 4125 0    43   ~ 0
 MCU_PC0
-Text Label 8575 4550 0    43   ~ 0
+Text Label 9050 4225 0    43   ~ 0
 MCU_PC1
-Text Label 8575 4650 0    43   ~ 0
+Text Label 9050 4325 0    43   ~ 0
 MCU_PC13
-Text Label 8575 4750 0    43   ~ 0
+Text Label 9050 4425 0    43   ~ 0
 MCU_PC14
-Text Label 8575 4850 0    43   ~ 0
+Text Label 9050 4525 0    43   ~ 0
 MCU_PC15
 $Comp
 L power:GND #PWR?
@@ -520,7 +516,7 @@ Wire Wire Line
 Wire Wire Line
 	6600 1525 6600 1450
 Wire Wire Line
-	7025 975  8025 975 
+	7025 975  7800 975 
 Wire Wire Line
 	8025 975  8025 1250
 Connection ~ 7025 975 
@@ -671,58 +667,66 @@ Wire Wire Line
 Connection ~ 4025 1675
 Wire Wire Line
 	4025 1675 4025 1200
-Text Label 8575 5050 0    43   ~ 0
+Text Label 9050 4725 0    43   ~ 0
 MCU_PD4
-Text Label 8575 5150 0    43   ~ 0
+Text Label 9050 4825 0    43   ~ 0
 MCU_PD5
-Text Label 8575 5250 0    43   ~ 0
+Text Label 9050 4925 0    43   ~ 0
 MCU_PD6
-Text Label 8575 5350 0    43   ~ 0
+Text Label 9050 5025 0    43   ~ 0
 MCU_PD7
-Text Label 8575 5550 0    43   ~ 0
+Text Label 9050 5225 0    43   ~ 0
 MCU_PF0
-Text Label 8575 5650 0    43   ~ 0
+Text Label 9050 5325 0    43   ~ 0
 MCU_PF1
-Text Label 8575 5750 0    43   ~ 0
+Text Label 9050 5425 0    43   ~ 0
 MCU_PF2
-Text Notes 1575 4800 0    50   ~ 0
-Conexión UART0 (Location 5)\nU0_CTS: PD5\nU0_RTS: PD6\nU0_RX: PF2\nU0_TX: PF1
-Text HLabel 1575 3875 0    43   Input ~ 0
+Text Notes 2075 4450 0    50   ~ 0
+Conexión UART0 (Location 5)\nU0_CTS: PD5\nU0_RTS: PD6\nU0_RX: PF2\nU0_TX: PF1\n\nComo configurar la funcionalidad de bootloader??\nSegún datasheet está en los pines PF0 y PF1:\nBOOT_RX: PF1\nBOOT_TX: PF0
+Text HLabel 2075 3225 0    43   Input ~ 0
 RX
-Text HLabel 1575 3975 0    43   Output ~ 0
+Text HLabel 2075 3325 0    43   Output ~ 0
 TX
-Text HLabel 1575 4075 0    43   BiDi ~ 0
+Text HLabel 2075 3425 0    43   BiDi ~ 0
 CTS
-Text HLabel 1575 4175 0    43   BiDi ~ 0
+Text HLabel 2075 3525 0    43   BiDi ~ 0
 RTS
-Text Label 2525 3875 0    43   ~ 0
+Text Label 3025 3225 0    43   ~ 0
 MCU_PF2
-Text Label 2525 3975 0    43   ~ 0
+Text Label 3025 3325 0    43   ~ 0
 MCU_PF1
-Text Label 2525 4075 0    43   ~ 0
+Text Label 3025 3425 0    43   ~ 0
 MCU_PD5
-Text Label 2525 4175 0    43   ~ 0
+Text Label 3025 3525 0    43   ~ 0
 MCU_PD6
 Wire Wire Line
-	1575 3875 2525 3875
+	2075 3225 3025 3225
 Wire Wire Line
-	2525 3975 1575 3975
+	3025 3325 2075 3325
 Wire Wire Line
-	1575 4075 2525 4075
+	2075 3425 3025 3425
 Wire Wire Line
-	1575 4175 2525 4175
-Text HLabel 6575 3850 0    43   Input ~ 0
+	2075 3525 3025 3525
+Text HLabel 7050 3525 0    43   Input ~ 0
 MCU_RESET
+Text Notes 1550 5875 0    43   ~ 0
+Requerimientos de Tensión\n==================\n\nVREGVDD = AVDD (Debe ser el mayor volaje del sistema)\nAVDD >= DVDD\nAVDD >= IOVDD
+Wire Wire Line
+	7800 975  7800 1550
+Connection ~ 7800 975 
+Wire Wire Line
+	7800 975  8025 975 
+Connection ~ 7800 1550
 Wire Bus Line
-	6075 3600 6075 4150
+	6550 3275 6550 3825
 Wire Bus Line
-	9475 4100 9475 5650
+	9950 3775 9950 5325
 Wire Bus Line
-	9325 3850 9325 5250
+	9800 3525 9800 4925
 Wire Bus Line
-	9175 3600 9175 4750
+	9650 3275 9650 4425
 Wire Bus Line
-	5825 4100 5825 5250
+	6300 3775 6300 4925
 Wire Bus Line
-	5950 3850 5950 4750
+	6425 3525 6425 4425
 $EndSCHEMATC

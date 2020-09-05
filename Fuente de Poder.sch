@@ -153,7 +153,7 @@ Wire Wire Line
 Text Notes 6000 2950 0    43   ~ 0
 Etapa reguladora de voltaje - +3V3
 Text Notes 750  7500 0    43   ~ 0
-NOTAS\n=======\n\n- IP4220CZ6 - Supresor de descargas electrostáticas (ESD) / Diodos TVS\n  (agregar en revisión del diseño).\n- Pin LOWPOWER de chip UART está en modo "Higth power device" (ver datasheet).\n- Revisar conección VBUS_SENSE (ver datasheet).\n- El pin USB ID del conector se usa para funcionalidad OTG (sino se usa, a tierra).\n- 
+NOTAS\n=======\n\n- IP4220CZ6 - Supresor de descargas electrostáticas (ESD) / Diodos TVS\n  (agregar en revisión del diseño).\n- Pin LOWPOWER de chip UART está en modo "Higth power device" (ver datasheet).\n- Revisar conección VBUS_SENSE (ver datasheet).\n- El pin USB ID del conector se usa para funcionalidad OTG (sin conexión?).\n- 
 Wire Wire Line
 	5750 1775 5275 1775
 Wire Wire Line
@@ -364,4 +364,5 @@ Text HLabel 8825 4975 2    43   BiDi ~ 0
 RTS
 Text Notes 6350 5800 0    43   ~ 0
 Etapa USB-UART
+NoConn ~ 2800 2175
 $EndSCHEMATC

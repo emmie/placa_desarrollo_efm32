@@ -364,4 +364,5 @@ Text HLabel 8825 4975 2    43   BiDi ~ 0
 RTS
 Text Notes 6350 5800 0    43   ~ 0
 Etapa USB-UART
+NoConn ~ 2800 2175
 $EndSCHEMATC

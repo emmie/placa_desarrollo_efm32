@@ -33,7 +33,7 @@ Si es posible en esta etapa, agregar:\n- Huella OpAmp\n- Deslizador tactil\n- Pi
 Text HLabel 9350 4850 2    43   BiDi ~ 0
 DSR
 Text HLabel 9350 4750 2    43   BiDi ~ 0
-DRT
+DTR
 Text HLabel 9350 4650 2    43   BiDi ~ 0
 CD
 Text HLabel 9350 4550 2    43   BiDi ~ 0
@@ -142,17 +142,17 @@ F 3 "" H 8150 3325 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 7150 1675 0    43   BiDi ~ 0
-MCU_PA[0..3]
+MCU_PA[0..2]
 Text HLabel 7150 1875 0    43   BiDi ~ 0
 MCU_PB[7..14]
 Text HLabel 9625 2925 2    43   BiDi ~ 0
-MCU_PC[0..15]
+MCU_PF[0..2]
 Text HLabel 9625 3350 2    43   BiDi ~ 0
 MCU_PD[4..7]
 Text HLabel 7150 2075 0    43   BiDi ~ 0
 MCU_PE[10..13]
 Text HLabel 9625 3125 2    43   BiDi ~ 0
-MCU_PF[0..2]
+MCU_PC[0..15]
 Wire Wire Line
 	8200 1750 8150 1750
 Wire Wire Line
@@ -238,10 +238,7 @@ Entry Wire Line
 Entry Wire Line
 	9050 2750 9150 2850
 Wire Wire Line
-	8150 1750 8150 1850
-Wire Wire Line
 	8200 1850 8150 1850
-Connection ~ 8150 1850
 Wire Wire Line
 	8150 1850 8150 3325
 Entry Wire Line
@@ -310,13 +307,9 @@ Wire Wire Line
 	2625 4225 2625 4400
 Wire Wire Line
 	2625 4700 2625 4875
-Text HLabel 3025 3600 2    43   BiDi ~ 0
-MCU_PD[4..7]
-Wire Wire Line
-	3025 3600 2625 3600
 Wire Wire Line
 	2625 3600 2625 3925
-Text Label 2625 3600 0    43   ~ 0
+Text Label 2925 3600 0    43   ~ 0
 MCU_PD7
 $Comp
 L Device:R R3
@@ -385,6 +378,56 @@ Wire Wire Line
 	2775 1225 2775 1425
 Text Notes 8275 3775 0    43   ~ 0
 Pines GPIOs
+Text Label 7800 1950 0    43   ~ 0
+MCU_PA0
+Text Label 7800 2050 0    43   ~ 0
+MCU_PA1
+Text Label 7800 2150 0    43   ~ 0
+MCU_PA2
+Text Label 7800 2250 0    43   ~ 0
+MCU_PB7
+Text Label 7800 2350 0    43   ~ 0
+MCU_PB8
+Text Label 7750 2450 0    43   ~ 0
+MCU_PB11
+Text Label 7750 2550 0    43   ~ 0
+MCU_PB13
+Text Label 7750 2750 0    43   ~ 0
+MCU_PE10
+Text Label 7750 2850 0    43   ~ 0
+MCU_PE11
+Text Label 7750 2950 0    43   ~ 0
+MCU_PE12
+Text Label 7750 3050 0    43   ~ 0
+MCU_PE13
+Text Label 8800 1950 0    43   ~ 0
+MCU_PF0
+Text Label 8800 2050 0    43   ~ 0
+MCU_PF1
+Text Label 8800 2150 0    43   ~ 0
+MCU_PF2
+Text Label 7750 2650 0    43   ~ 0
+MCU_PB14
+Text Label 8800 2250 0    43   ~ 0
+MCU_PC0
+Text Label 8800 2350 0    43   ~ 0
+MCU_PC1
+Text Label 8800 2450 0    43   ~ 0
+MCU_PC13
+Text Label 8800 2550 0    43   ~ 0
+MCU_PC14
+Text Label 8800 2650 0    43   ~ 0
+MCU_PC15
+Text Label 8800 2750 0    43   ~ 0
+MCU_PD4
+Text Label 8800 2850 0    43   ~ 0
+MCU_PD5
+Text Label 8800 2950 0    43   ~ 0
+MCU_PD6
+Text Label 8800 3050 0    43   ~ 0
+MCU_PD7
+Wire Wire Line
+	2625 3600 2925 3600
 Wire Bus Line
 	7675 1675 7675 2050
 Wire Bus Line
@@ -397,4 +440,6 @@ Wire Bus Line
 	7325 2075 7325 2950
 Wire Bus Line
 	7500 1875 7500 2550
+Text HLabel 8150 1750 0    43   Output ~ 0
+MCU_RESET
 $EndSCHEMATC
