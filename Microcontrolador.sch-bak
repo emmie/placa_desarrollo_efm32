@@ -729,4 +729,6 @@ Wire Bus Line
 	6300 3775 6300 4925
 Wire Bus Line
 	6425 3525 6425 4425
+Text Notes 1500 6700 0    59   ~ 0
+DOCUMENTACION DE REFERENCIA\n=====================\n\nhttps://www.silabs.com/support/training/efm32-series-0-getting-started\n\nhttps://docs.silabs.com/mcu/5.8/efm32tg11/\n
 $EndSCHEMATC

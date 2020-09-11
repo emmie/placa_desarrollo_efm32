@@ -14,22 +14,11 @@ Comment3 "Emiliano Pereyra"
 Comment4 ""
 $EndDescr
 $Comp
-L MAX8887EZK33:MAX8887EZK33+ U2
-U 1 1 5F4D7F55
-P 5750 1775
-F 0 "U2" H 6550 2162 60  0000 C CNN
-F 1 "MAX8887EZK33+" H 6550 2056 60  0000 C CNN
-F 2 "Mis Huellas:MAX8887EZK33" H 6550 2015 60  0001 C CNN
-F 3 "https://datasheets.maximintegrated.com/en/ds/MAX8887-MAX8888.pdf" H 6575 2375 60  0000 C CNN
-	1    5750 1775
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C2
 U 1 1 5F57B5AE
 P 5275 2000
 F 0 "C2" H 5390 2046 50  0000 L CNN
-F 1 "2.2u" H 5390 1955 50  0000 L CNN
+F 1 "1u" H 5390 1955 50  0000 L CNN
 F 2 "" H 5313 1850 50  0001 C CNN
 F 3 "~" H 5275 2000 50  0001 C CNN
 	1    5275 2000
@@ -40,7 +29,7 @@ L Device:C C4
 U 1 1 5F57B99E
 P 7700 2000
 F 0 "C4" H 7815 2046 50  0000 L CNN
-F 1 "2.2u" H 7815 1955 50  0000 L CNN
+F 1 "1u" H 7815 1955 50  0000 L CNN
 F 2 "" H 7738 1850 50  0001 C CNN
 F 3 "~" H 7700 2000 50  0001 C CNN
 	1    7700 2000
@@ -80,9 +69,6 @@ F 3 "" H 7700 2225 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5750 1875 5750 1775
-Connection ~ 5750 1775
-Wire Wire Line
 	5275 2250 5275 2150
 Wire Wire Line
 	5275 1850 5275 1775
@@ -100,32 +86,6 @@ F 3 "" H 5275 1500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5275 1775 5275 1500
-$Comp
-L Device:C C3
-U 1 1 5F582968
-P 5750 2350
-F 0 "C3" H 5865 2396 50  0000 L CNN
-F 1 "10n" H 5865 2305 50  0000 L CNN
-F 2 "" H 5788 2200 50  0001 C CNN
-F 3 "~" H 5750 2350 50  0001 C CNN
-	1    5750 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR010
-U 1 1 5F582972
-P 5750 2600
-F 0 "#PWR010" H 5750 2350 50  0001 C CNN
-F 1 "GND" H 5755 2427 50  0000 C CNN
-F 2 "" H 5750 2600 50  0001 C CNN
-F 3 "" H 5750 2600 50  0001 C CNN
-	1    5750 2600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5750 2600 5750 2500
-Wire Wire Line
-	5750 2075 5750 2200
 Wire Wire Line
 	7350 2575 7350 2175
 Wire Wire Line
@@ -154,8 +114,6 @@ Text Notes 6000 2950 0    43   ~ 0
 Etapa reguladora de voltaje - +3V3
 Text Notes 750  7500 0    43   ~ 0
 NOTAS\n=======\n\n- IP4220CZ6 - Supresor de descargas electrostáticas (ESD) / Diodos TVS\n  (agregar en revisión del diseño).\n- Pin LOWPOWER de chip UART está en modo "Higth power device" (ver datasheet).\n- Revisar conección VBUS_SENSE (ver datasheet).\n- El pin USB ID del conector se usa para funcionalidad OTG (sin conexión?).\n- 
-Wire Wire Line
-	5750 1775 5275 1775
 Wire Wire Line
 	2800 2075 3125 2075
 Wire Wire Line
@@ -202,7 +160,7 @@ P 5625 4175
 F 0 "U1" H 7225 4562 60  0000 C CNN
 F 1 "XR21B1411IL16TR-F" H 7225 4456 60  0000 C CNN
 F 2 "QFN-16" H 7225 4415 60  0001 C CNN
-F 3 "https://www.maxlinear.com/ds/xr21b1411.pdf" H 7250 4750 60  0000 C CNN
+F 3 "https://www.maxlinear.com/ds/xr21b1411.pdf" H 7250 4750 60  0001 C CNN
 	1    5625 4175
 	1    0    0    -1  
 $EndComp
@@ -365,4 +323,20 @@ RTS
 Text Notes 6350 5800 0    43   ~ 0
 Etapa USB-UART
 NoConn ~ 2800 2175
+$Comp
+L SP6260GEKLTR:SP6260GEK-L_TR U2
+U 1 1 5F5C0B18
+P 5750 1775
+F 0 "U2" H 6550 2162 60  0000 C CNN
+F 1 "SP6260GEK-L_TR" H 6550 2056 60  0000 C CNN
+F 2 "SOT-23-5" H 6550 2015 60  0001 C CNN
+F 3 "" H 5750 1775 60  0000 C CNN
+	1    5750 1775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5275 1775 5750 1775
+Wire Wire Line
+	5750 1875 5750 1775
+Connection ~ 5750 1775
 $EndSCHEMATC
