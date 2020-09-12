@@ -73,19 +73,8 @@ F 3 "" H 1600 3725 50  0001 C CNN
 	1    1600 3725
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x04_Male J3
-U 1 1 5F5DBD3C
-P 9150 4650
-F 0 "J3" H 9258 4931 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 9258 4840 50  0000 C CNN
-F 2 "" H 9150 4650 50  0001 C CNN
-F 3 "~" H 9150 4650 50  0001 C CNN
-	1    9150 4650
-	1    0    0    -1  
-$EndComp
-Text Notes 8700 5175 0    43   ~ 0
-Pines "sobrantes" de USB-UART\n(definir si es necesario dejarlos disponibles)
+Text Notes 8800 5125 0    43   ~ 0
+Pines USB-UART\n
 $Comp
 L Connector_Generic:Conn_02x14_Odd_Even J2
 U 1 1 5F5DF1D0
@@ -428,6 +417,8 @@ Text Label 8800 3050 0    43   ~ 0
 MCU_PD7
 Wire Wire Line
 	2625 3600 2925 3600
+Text HLabel 8150 1750 0    43   Output ~ 0
+MCU_RESET
 Wire Bus Line
 	7675 1675 7675 2050
 Wire Bus Line
@@ -440,6 +431,23 @@ Wire Bus Line
 	7325 2075 7325 2950
 Wire Bus Line
 	7500 1875 7500 2550
-Text HLabel 8150 1750 0    43   Output ~ 0
-MCU_RESET
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J3
+U 1 1 5F5CD54F
+P 9050 4650
+F 0 "J3" H 9100 4967 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 9100 4876 50  0000 C CNN
+F 2 "" H 9050 4650 50  0001 C CNN
+F 3 "~" H 9050 4650 50  0001 C CNN
+	1    9050 4650
+	1    0    0    -1  
+$EndComp
+Text HLabel 8850 4550 0    43   Input ~ 0
+RX
+Text HLabel 8850 4650 0    43   Output ~ 0
+TX
+Text HLabel 8850 4750 0    43   BiDi ~ 0
+CTS
+Text HLabel 8850 4850 0    43   BiDi ~ 0
+RTS
 $EndSCHEMATC
