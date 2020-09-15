@@ -35,7 +35,7 @@ AR Path="/5F4D1FFB/5F4D785E" Ref="U3"  Part="1"
 F 0 "U3" H 8050 3912 60  0000 C CNN
 F 1 "EFM32TG11B120F128GM32" H 8050 3806 60  0000 C CNN
 F 2 "Mis Huellas:EFM32TG11B120F128GM32" H 8050 3765 60  0001 C CNN
-F 3 "https://www.silabs.com/documents/public/data-sheets/efm32tg11-datasheet.pdf" H 8050 1300 60  0000 C CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/efm32tg11-datasheet.pdf" H 8050 1300 60  0001 C CNN
 	1    7050 3525
 	1    0    0    -1  
 $EndComp
@@ -717,6 +717,8 @@ Connection ~ 7800 975
 Wire Wire Line
 	7800 975  8025 975 
 Connection ~ 7800 1550
+Text Notes 1500 6700 0    59   ~ 0
+DOCUMENTACION DE REFERENCIA\n=====================\n\nhttps://www.silabs.com/support/training/efm32-series-0-getting-started\n\nhttps://docs.silabs.com/mcu/5.8/efm32tg11/\n
 Wire Bus Line
 	6550 3275 6550 3825
 Wire Bus Line
@@ -729,6 +731,4 @@ Wire Bus Line
 	6300 3775 6300 4925
 Wire Bus Line
 	6425 3525 6425 4425
-Text Notes 1500 6700 0    59   ~ 0
-DOCUMENTACION DE REFERENCIA\n=====================\n\nhttps://www.silabs.com/support/training/efm32-series-0-getting-started\n\nhttps://docs.silabs.com/mcu/5.8/efm32tg11/\n
 $EndSCHEMATC

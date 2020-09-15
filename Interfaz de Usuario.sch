@@ -316,55 +316,19 @@ MCU_RESET
 $Comp
 L power:GND #PWR015
 U 1 1 5F61A6A2
-P 1375 2275
-F 0 "#PWR015" H 1375 2025 50  0001 C CNN
-F 1 "GND" H 1380 2102 50  0000 C CNN
-F 2 "" H 1375 2275 50  0001 C CNN
-F 3 "" H 1375 2275 50  0001 C CNN
-	1    1375 2275
+P 1050 2300
+F 0 "#PWR015" H 1050 2050 50  0001 C CNN
+F 1 "GND" H 1055 2127 50  0000 C CNN
+F 2 "" H 1050 2300 50  0001 C CNN
+F 3 "" H 1050 2300 50  0001 C CNN
+	1    1050 2300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R4
-U 1 1 5F61AD2C
-P 2775 1575
-F 0 "R4" H 2845 1621 50  0000 L CNN
-F 1 "R" H 2845 1530 50  0000 L CNN
-F 2 "" V 2705 1575 50  0001 C CNN
-F 3 "~" H 2775 1575 50  0001 C CNN
-	1    2775 1575
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR019
-U 1 1 5F61B478
-P 2775 1225
-F 0 "#PWR019" H 2775 1075 50  0001 C CNN
-F 1 "+3V3" H 2790 1398 50  0000 C CNN
-F 2 "" H 2775 1225 50  0001 C CNN
-F 3 "" H 2775 1225 50  0001 C CNN
-	1    2775 1225
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2225 1950 2775 1950
-Wire Wire Line
-	2775 1725 2775 1950
-Connection ~ 2775 1950
-Wire Wire Line
-	2775 1950 3250 1950
 Wire Wire Line
 	2225 1950 2225 2150
 Connection ~ 2225 1950
 Wire Wire Line
-	1825 1950 1375 1950
-Wire Wire Line
-	1375 1950 1375 2275
-Wire Wire Line
 	1825 1950 1825 2150
-Connection ~ 1825 1950
-Wire Wire Line
-	2775 1225 2775 1425
 Text Notes 8275 3775 0    43   ~ 0
 Pines GPIOs
 Text Label 7800 1950 0    43   ~ 0
@@ -419,18 +383,6 @@ Wire Wire Line
 	2625 3600 2925 3600
 Text HLabel 8150 1750 0    43   Output ~ 0
 MCU_RESET
-Wire Bus Line
-	7675 1675 7675 2050
-Wire Bus Line
-	9500 2050 9500 2925
-Wire Bus Line
-	9325 2350 9325 3125
-Wire Bus Line
-	9150 2850 9150 3350
-Wire Bus Line
-	7325 2075 7325 2950
-Wire Bus Line
-	7500 1875 7500 2550
 $Comp
 L Connector_Generic:Conn_02x04_Odd_Even J3
 U 1 1 5F5CD54F
@@ -450,4 +402,65 @@ Text HLabel 8850 4750 0    43   BiDi ~ 0
 CTS
 Text HLabel 8850 4850 0    43   BiDi ~ 0
 RTS
+Text Notes 1275 1475 0    39   ~ 0
+Según AN0002.1 no es necesario resistenica de pull-up\n(de hecho, podría ser crítico en modo alimentación de respaldo)
+$Comp
+L Device:C C?
+U 1 1 5F608348
+P 2925 2150
+F 0 "C?" H 3040 2196 50  0000 L CNN
+F 1 "100n" H 3040 2105 50  0000 L CNN
+F 2 "" H 2963 2000 50  0001 C CNN
+F 3 "~" H 2925 2150 50  0001 C CNN
+	1    2925 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F608A3C
+P 2925 2300
+F 0 "#PWR?" H 2925 2050 50  0001 C CNN
+F 1 "GND" H 2930 2127 50  0000 C CNN
+F 2 "" H 2925 2300 50  0001 C CNN
+F 3 "" H 2925 2300 50  0001 C CNN
+	1    2925 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F60A43B
+P 1425 1950
+F 0 "R?" V 1218 1950 50  0000 C CNN
+F 1 "100R" V 1309 1950 50  0000 C CNN
+F 2 "" V 1355 1950 50  0001 C CNN
+F 3 "~" H 1425 1950 50  0001 C CNN
+	1    1425 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1050 1950 1275 1950
+Wire Wire Line
+	1575 1950 1825 1950
+Connection ~ 1825 1950
+Wire Wire Line
+	2225 1950 2925 1950
+Wire Wire Line
+	2925 2000 2925 1950
+Connection ~ 2925 1950
+Wire Wire Line
+	2925 1950 3250 1950
+Wire Wire Line
+	1050 1950 1050 2300
+Wire Bus Line
+	7675 1675 7675 2050
+Wire Bus Line
+	9500 2050 9500 2925
+Wire Bus Line
+	9325 2350 9325 3125
+Wire Bus Line
+	9150 2850 9150 3350
+Wire Bus Line
+	7325 2075 7325 2950
+Wire Bus Line
+	7500 1875 7500 2550
 $EndSCHEMATC

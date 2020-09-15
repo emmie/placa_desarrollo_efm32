@@ -35,7 +35,7 @@ AR Path="/5F4D1FFB/5F4D785E" Ref="U3"  Part="1"
 F 0 "U3" H 8050 3912 60  0000 C CNN
 F 1 "EFM32TG11B120F128GM32" H 8050 3806 60  0000 C CNN
 F 2 "Mis Huellas:EFM32TG11B120F128GM32" H 8050 3765 60  0001 C CNN
-F 3 "https://www.silabs.com/documents/public/data-sheets/efm32tg11-datasheet.pdf" H 8050 1300 60  0000 C CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/efm32tg11-datasheet.pdf" H 8050 1300 60  0001 C CNN
 	1    7050 3525
 	1    0    0    -1  
 $EndComp
