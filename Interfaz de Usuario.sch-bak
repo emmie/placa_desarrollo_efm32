@@ -76,17 +76,6 @@ $EndComp
 Text Notes 8800 5125 0    43   ~ 0
 Pines USB-UART\n
 $Comp
-L Connector_Generic:Conn_02x14_Odd_Even J2
-U 1 1 5F5DF1D0
-P 8400 2350
-F 0 "J2" H 8450 3167 50  0000 C CNN
-F 1 "Conn_02x14_Odd_Even" H 8450 3076 50  0000 C CNN
-F 2 "" H 8400 2350 50  0001 C CNN
-F 3 "~" H 8400 2350 50  0001 C CNN
-	1    8400 2350
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3V3 #PWR021
 U 1 1 5F5DFF8C
 P 9050 1300
@@ -122,28 +111,28 @@ $EndComp
 $Comp
 L power:GND #PWR020
 U 1 1 5F5E1C7B
-P 8150 3325
-F 0 "#PWR020" H 8150 3075 50  0001 C CNN
-F 1 "GND" H 8155 3152 50  0000 C CNN
-F 2 "" H 8150 3325 50  0001 C CNN
-F 3 "" H 8150 3325 50  0001 C CNN
-	1    8150 3325
+P 7775 3325
+F 0 "#PWR020" H 7775 3075 50  0001 C CNN
+F 1 "GND" H 7780 3152 50  0000 C CNN
+F 2 "" H 7775 3325 50  0001 C CNN
+F 3 "" H 7775 3325 50  0001 C CNN
+	1    7775 3325
 	1    0    0    -1  
 $EndComp
-Text HLabel 7150 1675 0    43   BiDi ~ 0
+Text HLabel 6775 1675 0    43   BiDi ~ 0
 MCU_PA[0..2]
-Text HLabel 7150 1875 0    43   BiDi ~ 0
+Text HLabel 6775 1875 0    43   BiDi ~ 0
 MCU_PB[7..14]
 Text HLabel 9625 2925 2    43   BiDi ~ 0
 MCU_PF[0..2]
 Text HLabel 9625 3350 2    43   BiDi ~ 0
 MCU_PD[4..7]
-Text HLabel 7150 2075 0    43   BiDi ~ 0
+Text HLabel 6775 2075 0    43   BiDi ~ 0
 MCU_PE[10..13]
 Text HLabel 9625 3125 2    43   BiDi ~ 0
 MCU_PC[0..15]
 Wire Wire Line
-	8200 1750 8150 1750
+	7825 1750 7775 1750
 Wire Wire Line
 	8700 1750 9050 1750
 Wire Wire Line
@@ -153,59 +142,59 @@ Wire Wire Line
 Wire Wire Line
 	9450 1850 9450 1300
 Wire Wire Line
-	8200 1950 7775 1950
+	7825 1950 7400 1950
 Wire Wire Line
-	8200 2050 7775 2050
+	7825 2050 7400 2050
 Wire Wire Line
-	8200 2150 7775 2150
+	7825 2150 7400 2150
 Entry Wire Line
-	7775 1950 7675 1850
+	7400 1950 7300 1850
 Entry Wire Line
-	7775 2050 7675 1950
+	7400 2050 7300 1950
 Entry Wire Line
-	7775 2150 7675 2050
+	7400 2150 7300 2050
 Entry Wire Line
-	7600 2250 7500 2150
+	7225 2250 7125 2150
 Entry Wire Line
-	7600 2350 7500 2250
+	7225 2350 7125 2250
 Entry Wire Line
-	7600 2450 7500 2350
+	7225 2450 7125 2350
 Entry Wire Line
-	7600 2550 7500 2450
+	7225 2550 7125 2450
 Entry Wire Line
-	7600 2650 7500 2550
+	7225 2650 7125 2550
 Wire Wire Line
-	7600 2250 8200 2250
+	7225 2250 7825 2250
 Wire Wire Line
-	7600 2350 8200 2350
+	7225 2350 7825 2350
 Wire Wire Line
-	7600 2450 8200 2450
+	7225 2450 7825 2450
 Wire Wire Line
-	7600 2550 8200 2550
+	7225 2550 7825 2550
 Wire Wire Line
-	7600 2650 8200 2650
+	7225 2650 7825 2650
 Wire Bus Line
-	7150 2075 7325 2075
+	6775 2075 6950 2075
 Wire Bus Line
-	7150 1875 7500 1875
+	6775 1875 7125 1875
 Wire Bus Line
-	7150 1675 7675 1675
+	6775 1675 7300 1675
 Entry Wire Line
-	7425 2750 7325 2650
+	7050 2750 6950 2650
 Entry Wire Line
-	7425 2850 7325 2750
+	7050 2850 6950 2750
 Entry Wire Line
-	7425 2950 7325 2850
+	7050 2950 6950 2850
 Entry Wire Line
-	7425 3050 7325 2950
+	7050 3050 6950 2950
 Wire Wire Line
-	7425 3050 8200 3050
+	7050 3050 7825 3050
 Wire Wire Line
-	7425 2950 8200 2950
+	7050 2950 7825 2950
 Wire Wire Line
-	7425 2850 8200 2850
+	7050 2850 7825 2850
 Wire Wire Line
-	7425 2750 8200 2750
+	7050 2750 7825 2750
 Wire Wire Line
 	8700 2750 9050 2750
 Wire Wire Line
@@ -227,9 +216,9 @@ Entry Wire Line
 Entry Wire Line
 	9050 2750 9150 2850
 Wire Wire Line
-	8200 1850 8150 1850
+	7825 1850 7775 1850
 Wire Wire Line
-	8150 1850 8150 3325
+	7775 1850 7775 3325
 Entry Wire Line
 	9325 2350 9225 2250
 Entry Wire Line
@@ -329,29 +318,29 @@ Wire Wire Line
 Connection ~ 2225 1950
 Wire Wire Line
 	1825 1950 1825 2150
-Text Notes 8275 3775 0    43   ~ 0
+Text Notes 8100 3725 0    43   ~ 0
 Pines GPIOs
-Text Label 7800 1950 0    43   ~ 0
+Text Label 7425 1950 0    43   ~ 0
 MCU_PA0
-Text Label 7800 2050 0    43   ~ 0
+Text Label 7425 2050 0    43   ~ 0
 MCU_PA1
-Text Label 7800 2150 0    43   ~ 0
+Text Label 7425 2150 0    43   ~ 0
 MCU_PA2
-Text Label 7800 2250 0    43   ~ 0
+Text Label 7425 2250 0    43   ~ 0
 MCU_PB7
-Text Label 7800 2350 0    43   ~ 0
+Text Label 7425 2350 0    43   ~ 0
 MCU_PB8
-Text Label 7750 2450 0    43   ~ 0
+Text Label 7375 2450 0    43   ~ 0
 MCU_PB11
-Text Label 7750 2550 0    43   ~ 0
+Text Label 7375 2550 0    43   ~ 0
 MCU_PB13
-Text Label 7750 2750 0    43   ~ 0
+Text Label 7375 2750 0    43   ~ 0
 MCU_PE10
-Text Label 7750 2850 0    43   ~ 0
+Text Label 7375 2850 0    43   ~ 0
 MCU_PE11
-Text Label 7750 2950 0    43   ~ 0
+Text Label 7375 2950 0    43   ~ 0
 MCU_PE12
-Text Label 7750 3050 0    43   ~ 0
+Text Label 7375 3050 0    43   ~ 0
 MCU_PE13
 Text Label 8800 1950 0    43   ~ 0
 MCU_PF0
@@ -359,7 +348,7 @@ Text Label 8800 2050 0    43   ~ 0
 MCU_PF1
 Text Label 8800 2150 0    43   ~ 0
 MCU_PF2
-Text Label 7750 2650 0    43   ~ 0
+Text Label 7375 2650 0    43   ~ 0
 MCU_PB14
 Text Label 8800 2250 0    43   ~ 0
 MCU_PC0
@@ -381,7 +370,7 @@ Text Label 8800 3050 0    43   ~ 0
 MCU_PD7
 Wire Wire Line
 	2625 3600 2925 3600
-Text HLabel 8150 1750 0    43   Output ~ 0
+Text HLabel 7775 1750 0    43   Output ~ 0
 MCU_RESET
 $Comp
 L Connector_Generic:Conn_02x04_Odd_Even J3
@@ -405,10 +394,10 @@ RTS
 Text Notes 1275 1475 0    39   ~ 0
 Según AN0002.1 no es necesario resistenica de pull-up\n(de hecho, podría ser crítico en modo alimentación de respaldo)
 $Comp
-L Device:C C?
+L Device:C C3
 U 1 1 5F608348
 P 2925 2150
-F 0 "C?" H 3040 2196 50  0000 L CNN
+F 0 "C3" H 3040 2196 50  0000 L CNN
 F 1 "100n" H 3040 2105 50  0000 L CNN
 F 2 "" H 2963 2000 50  0001 C CNN
 F 3 "~" H 2925 2150 50  0001 C CNN
@@ -416,10 +405,10 @@ F 3 "~" H 2925 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 5F608A3C
 P 2925 2300
-F 0 "#PWR?" H 2925 2050 50  0001 C CNN
+F 0 "#PWR0101" H 2925 2050 50  0001 C CNN
 F 1 "GND" H 2930 2127 50  0000 C CNN
 F 2 "" H 2925 2300 50  0001 C CNN
 F 3 "" H 2925 2300 50  0001 C CNN
@@ -427,10 +416,10 @@ F 3 "" H 2925 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R4
 U 1 1 5F60A43B
 P 1425 1950
-F 0 "R?" V 1218 1950 50  0000 C CNN
+F 0 "R4" V 1218 1950 50  0000 C CNN
 F 1 "100R" V 1309 1950 50  0000 C CNN
 F 2 "" V 1355 1950 50  0001 C CNN
 F 3 "~" H 1425 1950 50  0001 C CNN
@@ -451,8 +440,95 @@ Wire Wire Line
 	2925 1950 3250 1950
 Wire Wire Line
 	1050 1950 1050 2300
+$Comp
+L Connector_Generic:Conn_01x14 J2
+U 1 1 5F616B2C
+P 8025 2350
+F 0 "J2" H 7975 3225 50  0000 L CNN
+F 1 "Conn_01x14" H 7700 3100 50  0000 L CNN
+F 2 "" H 8025 2350 50  0001 C CNN
+F 3 "~" H 8025 2350 50  0001 C CNN
+	1    8025 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x14 J?
+U 1 1 5F61A09A
+P 8500 2350
+F 0 "J?" H 8450 3225 50  0000 C CNN
+F 1 "Conn_01x14" H 8418 3076 50  0000 C CNN
+F 2 "" H 8500 2350 50  0001 C CNN
+F 3 "~" H 8500 2350 50  0001 C CNN
+	1    8500 2350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_10 J?
+U 1 1 5F61E73C
+P 6000 4725
+F 0 "J?" H 5550 5200 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" H 5525 5075 50  0000 R CNN
+F 2 "" H 6000 4725 50  0001 C CNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 5650 3475 50  0001 C CNN
+	1    6000 4725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 4425 6675 4425
+Wire Wire Line
+	6500 4625 6675 4625
+Wire Wire Line
+	6500 4725 6675 4725
+Wire Wire Line
+	6500 4825 6675 4825
+Wire Wire Line
+	6500 4925 6675 4925
+Wire Wire Line
+	6000 4125 6000 4000
+Text HLabel 6675 4425 2    43   Output ~ 0
+MCU_RESET
+Text Notes 5700 6125 0    43   ~ 0
+Interaz SWD\n(Serial Wire Debug)\nVMCU = 3,3V\nRef: AN0002.1
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F62A3CF
+P 6000 4000
+F 0 "#PWR?" H 6000 3850 50  0001 C CNN
+F 1 "+3V3" H 6015 4173 50  0000 C CNN
+F 2 "" H 6000 4000 50  0001 C CNN
+F 3 "" H 6000 4000 50  0001 C CNN
+	1    6000 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 5325 6000 5400
+Text Label 6675 4625 0    43   ~ 0
+MCU_PF0
+Text Label 6675 4725 0    43   ~ 0
+MCU_PF1
+Text Label 6675 4825 0    43   ~ 0
+MCU_PF2
+$Comp
+L power:GND #PWR?
+U 1 1 5F6334C6
+P 6000 5500
+F 0 "#PWR?" H 6000 5250 50  0001 C CNN
+F 1 "GND" H 6005 5327 50  0000 C CNN
+F 2 "" H 6000 5500 50  0001 C CNN
+F 3 "" H 6000 5500 50  0001 C CNN
+	1    6000 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 5325 5900 5400
+Wire Wire Line
+	5900 5400 6000 5400
+Connection ~ 6000 5400
+Wire Wire Line
+	6000 5400 6000 5500
+NoConn ~ 6675 4925
 Wire Bus Line
-	7675 1675 7675 2050
+	7300 1675 7300 2050
 Wire Bus Line
 	9500 2050 9500 2925
 Wire Bus Line
@@ -460,7 +536,7 @@ Wire Bus Line
 Wire Bus Line
 	9150 2850 9150 3350
 Wire Bus Line
-	7325 2075 7325 2950
+	6950 2075 6950 2950
 Wire Bus Line
-	7500 1875 7500 2550
+	7125 1875 7125 2550
 $EndSCHEMATC
