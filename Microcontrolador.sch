@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 2 4
 Title "Placa de Desarrollo EFM32 - MCU ARM"
 Date "2020-08-30"
 Rev "0.1"
@@ -47,7 +47,7 @@ AR Path="/5F4D786A" Ref="C?"  Part="1"
 AR Path="/5F4D1FFB/5F4D786A" Ref="C13"  Part="1" 
 F 0 "C13" H 6715 1271 50  0000 L CNN
 F 1 "10n" H 6715 1180 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6638 1075 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6638 1075 50  0001 C CNN
 F 3 "~" H 6600 1225 50  0001 C CNN
 	1    6600 1225
 	1    0    0    -1  
@@ -60,7 +60,7 @@ AR Path="/5F4D7882" Ref="C?"  Part="1"
 AR Path="/5F4D1FFB/5F4D7882" Ref="C10"  Part="1" 
 F 0 "C10" H 6190 2321 50  0000 L CNN
 F 1 "100n" H 6190 2230 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6113 2125 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6113 2125 50  0001 C CNN
 F 3 "~" H 6075 2275 50  0001 C CNN
 	1    6075 2275
 	1    0    0    -1  
@@ -73,7 +73,7 @@ AR Path="/5F4D7888" Ref="C?"  Part="1"
 AR Path="/5F4D1FFB/5F4D7888" Ref="C16"  Part="1" 
 F 0 "C16" H 7915 2321 50  0000 L CNN
 F 1 "100n" H 7915 2230 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7838 2125 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7838 2125 50  0001 C CNN
 F 3 "~" H 7800 2275 50  0001 C CNN
 	1    7800 2275
 	1    0    0    -1  
@@ -86,7 +86,7 @@ AR Path="/5F4D788E" Ref="C?"  Part="1"
 AR Path="/5F4D1FFB/5F4D788E" Ref="C15"  Part="1" 
 F 0 "C15" H 7140 1271 50  0000 L CNN
 F 1 "10n" H 7140 1180 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7063 1075 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7063 1075 50  0001 C CNN
 F 3 "~" H 7025 1225 50  0001 C CNN
 	1    7025 1225
 	1    0    0    -1  
@@ -127,7 +127,7 @@ U 1 1 5F4E3B3D
 P 1275 1900
 F 0 "C5" H 1390 1946 50  0000 L CNN
 F 1 "12p" H 1390 1855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1313 1750 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1313 1750 50  0001 C CNN
 F 3 "~" H 1275 1900 50  0001 C CNN
 	1    1275 1900
 	1    0    0    -1  
@@ -138,7 +138,7 @@ U 1 1 5F4E3EA6
 P 2200 1900
 F 0 "C6" H 2315 1946 50  0000 L CNN
 F 1 "12p" H 2315 1855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2238 1750 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2238 1750 50  0001 C CNN
 F 3 "~" H 2200 1900 50  0001 C CNN
 	1    2200 1900
 	1    0    0    -1  
@@ -380,7 +380,7 @@ AR Path="/5F4D787C" Ref="C?"  Part="1"
 AR Path="/5F4D1FFB/5F4D787C" Ref="C12"  Part="1" 
 F 0 "C12" H 6665 2321 50  0000 L CNN
 F 1 "100n" H 6665 2230 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6588 2125 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6588 2125 50  0001 C CNN
 F 3 "~" H 6550 2275 50  0001 C CNN
 	1    6550 2275
 	1    0    0    -1  
@@ -393,7 +393,7 @@ AR Path="/5F4D7876" Ref="C?"  Part="1"
 AR Path="/5F4D1FFB/5F4D7876" Ref="C14"  Part="1" 
 F 0 "C14" H 7115 2321 50  0000 L CNN
 F 1 "100n" H 7115 2230 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7038 2125 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7038 2125 50  0001 C CNN
 F 3 "~" H 7000 2275 50  0001 C CNN
 	1    7000 2275
 	1    0    0    -1  
@@ -564,7 +564,7 @@ U 1 1 5F5504F2
 P 3100 1900
 F 0 "C7" H 3215 1946 50  0000 L CNN
 F 1 "22p" H 3215 1855 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 3138 1750 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3138 1750 50  0001 C CNN
 F 3 "~" H 3100 1900 50  0001 C CNN
 	1    3100 1900
 	1    0    0    -1  
@@ -575,10 +575,10 @@ U 1 1 5F5504FC
 P 4025 1900
 F 0 "C8" H 4140 1946 50  0000 L CNN
 F 1 "22p" H 4140 1855 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 4063 1750 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4063 1750 50  0001 C CNN
 F 3 "~" H 4025 1900 50  0001 C CNN
 	1    4025 1900
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Text Label 4325 1200 2    43   ~ 0
 MCU_PB8
@@ -680,6 +680,43 @@ Wire Wire Line
 Connection ~ 7800 1550
 Text Notes 1500 6700 0    59   ~ 0
 DOCUMENTACION DE REFERENCIA\n=====================\n\nhttps://www.silabs.com/support/training/efm32-series-0-getting-started\n\nhttps://docs.silabs.com/mcu/5.8/efm32tg11/\n
+$Comp
+L Device:C C?
+U 1 1 5F6CCD4E
+P 6200 1225
+AR Path="/5F6CCD4E" Ref="C?"  Part="1" 
+AR Path="/5F4D1FFB/5F6CCD4E" Ref="C11"  Part="1" 
+F 0 "C11" H 6315 1271 50  0000 L CNN
+F 1 "10u" H 6315 1180 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6238 1075 50  0001 C CNN
+F 3 "~" H 6200 1225 50  0001 C CNN
+	1    6200 1225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C17
+U 1 1 5F6CD9EF
+P 9050 3675
+F 0 "C17" H 9165 3721 50  0000 L CNN
+F 1 "1u" H 9165 3630 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9088 3525 50  0001 C CNN
+F 3 "~" H 9050 3675 50  0001 C CNN
+	1    9050 3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F6CE4E2
+P 5650 2275
+AR Path="/5F6CE4E2" Ref="C?"  Part="1" 
+AR Path="/5F4D1FFB/5F6CE4E2" Ref="C9"  Part="1" 
+F 0 "C9" H 5765 2321 50  0000 L CNN
+F 1 "10u" H 5765 2230 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5688 2125 50  0001 C CNN
+F 3 "~" H 5650 2275 50  0001 C CNN
+	1    5650 2275
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	6550 3275 6550 3825
 Wire Bus Line
@@ -692,37 +729,4 @@ Wire Bus Line
 	6300 3775 6300 4925
 Wire Bus Line
 	6425 3525 6425 4425
-$Comp
-L Device:CP C11
-U 1 1 5F69D076
-P 6200 1225
-F 0 "C11" H 6318 1271 50  0000 L CNN
-F 1 "10u" H 6318 1180 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 6238 1075 50  0001 C CNN
-F 3 "~" H 6200 1225 50  0001 C CNN
-	1    6200 1225
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP C9
-U 1 1 5F69E612
-P 5650 2275
-F 0 "C9" H 5768 2321 50  0000 L CNN
-F 1 "10u" H 5768 2230 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 5688 2125 50  0001 C CNN
-F 3 "~" H 5650 2275 50  0001 C CNN
-	1    5650 2275
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP C17
-U 1 1 5F6F5B46
-P 9050 3675
-F 0 "C17" H 9168 3721 50  0000 L CNN
-F 1 "1u" H 9168 3630 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 9088 3525 50  0001 C CNN
-F 3 "~" H 9050 3675 50  0001 C CNN
-	1    9050 3675
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC

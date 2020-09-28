@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 3 4
 Title "Placa de Desarrollo EFM32 - MCU ARM"
 Date "2020-08-30"
 Rev "0.1"
@@ -19,7 +19,7 @@ U 1 1 5F57B5AE
 P 5275 2000
 F 0 "C2" H 5390 2046 50  0000 L CNN
 F 1 "1u" H 5390 1955 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 5313 1850 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5313 1850 50  0001 C CNN
 F 3 "~" H 5275 2000 50  0001 C CNN
 	1    5275 2000
 	1    0    0    -1  
@@ -30,7 +30,7 @@ U 1 1 5F57B99E
 P 7700 2000
 F 0 "C3" H 7815 2046 50  0000 L CNN
 F 1 "1u" H 7815 1955 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 7738 1850 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7738 1850 50  0001 C CNN
 F 3 "~" H 7700 2000 50  0001 C CNN
 	1    7700 2000
 	1    0    0    -1  
@@ -122,15 +122,6 @@ Text Label 3125 2075 0    43   ~ 0
 USB_D-
 Text Label 3125 1975 0    43   ~ 0
 USB_D+
-Wire Wire Line
-	2500 2475 2500 2625
-Connection ~ 2500 2475
-Wire Wire Line
-	2500 2375 2500 2475
-Wire Wire Line
-	2400 2475 2500 2475
-Wire Wire Line
-	2400 2375 2400 2475
 $Comp
 L power:GND #PWR01
 U 1 1 5F57AE9A
@@ -218,7 +209,7 @@ U 1 1 5F59E401
 P 4125 4425
 F 0 "C1" H 4240 4471 50  0000 L CNN
 F 1 "100n" H 4240 4380 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4163 4275 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4163 4275 50  0001 C CNN
 F 3 "~" H 4125 4425 50  0001 C CNN
 	1    4125 4425
 	1    0    0    -1  
@@ -251,7 +242,7 @@ U 1 1 5F59FEE9
 P 5450 3850
 F 0 "R1" H 5520 3896 50  0000 L CNN
 F 1 "10k" H 5520 3805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5380 3850 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5380 3850 50  0001 C CNN
 F 3 "~" H 5450 3850 50  0001 C CNN
 	1    5450 3850
 	1    0    0    -1  
@@ -308,14 +299,6 @@ Text HLabel 8825 4175 2    43   Input ~ 0
 RX
 Text HLabel 8825 4275 2    43   Output ~ 0
 TX
-Text HLabel 8825 4475 2    43   BiDi ~ 0
-RWK
-Text HLabel 8825 4575 2    43   BiDi ~ 0
-CD
-Text HLabel 8825 4675 2    43   BiDi ~ 0
-DSR
-Text HLabel 8825 4775 2    43   BiDi ~ 0
-DTR
 Text HLabel 8825 4875 2    43   BiDi ~ 0
 CTS
 Text HLabel 8825 4975 2    43   BiDi ~ 0
@@ -339,4 +322,11 @@ Wire Wire Line
 Wire Wire Line
 	5750 1875 5750 1775
 Connection ~ 5750 1775
+NoConn ~ 8825 4775
+NoConn ~ 8825 4675
+NoConn ~ 8825 4575
+NoConn ~ 8825 4475
+Wire Wire Line
+	2500 2375 2500 2625
+NoConn ~ 2400 2375
 $EndSCHEMATC
